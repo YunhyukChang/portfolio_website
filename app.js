@@ -20,9 +20,9 @@ function pageTransitions() {
 
         if(id) {
             // remove selected from the other buttons
-            sectBtns.forEach((btn => {
+            sectBtns.forEach((btn) => {
                 btn.classList.remove("active")
-            }))
+            })
             e.target.classList.add("active")
 
             // hide other sections
@@ -30,7 +30,7 @@ function pageTransitions() {
                 section.classList.remove("active")
             })
 
-            const element = document.getElementById(id)
+            const element = document.getElementById(id);
             element.classList.add("active");
         }
     })
